@@ -1,0 +1,814 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,500;1,300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Mulish', sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+.burger-btn {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  display: none;
+  position: absolute;
+  left: -20px;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.burger-btn .line {
+  width: 24px;
+  height: 4px;
+  background-color: #000;
+}
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  position: absolute;
+  z-index: 99999999;
+  background: white;
+  width: 100vw;
+  height: 78vh;
+    bottom: 75px;
+}
+.mobile-menu ul{
+  font-weight: 400;
+  font-size: 20px;
+  width: 100%;
+  height: 4rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+}
+
+.mobile-menu ul:hover {
+  cursor: pointer;
+  color: rgba(4, 2, 2, 0.641);
+  background-color: aqua;
+}
+
+.hidden {
+  display: none;
+}
+
+.login-form {
+  position: absolute;
+  z-index: 999999;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #00000069;
+}
+
+/* OLX FORM  STYLING */
+.form-header {
+  margin-top: 27px;
+
+  padding: 0px 17px;
+
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.form-header img {
+  cursor: pointer;
+  height: 33px;
+  width: 33px;
+}
+
+form {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: 3px solid white;
+  width: 41rem;
+  height: 62rem;
+}
+
+.form-logo {
+  height: 7rem;
+  width: 13rem;
+}
+
+form h2 {
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(18, 47, 52);
+}
+
+form h3 {
+  line-height: 28px;
+  text-align: center;
+  font-weight: 400;
+  color: rgb(18, 47, 52);
+  font-size: 19px;
+}
+
+form p {
+  color: rgb(156, 11, 11);
+}
+
+form a {
+  text-decoration: none;
+  color: rgba(114, 114, 247, 0.963);
+}
+
+/* ._10c831ef{
+            width: 137px;
+    height: 100px
+        } */
+.form-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#form-buttons {
+  color: rgb(18, 47, 52);
+  font-size: 17px;
+  font-weight: 600;
+  background-color: white;
+  background: transparent;
+  border-radius: 3px;
+  display: flex;
+
+  gap: 1rem;
+  align-items: center;
+  height: 5rem;
+  width: 33rem;
+  border: 2px solid black;
+}
+
+#form-buttons:hover {
+  border: 3px solid black;
+  background-color: black;
+  color: white;
+}
+
+#form-buttons img {
+  margin: 0 27px;
+  height: 20px;
+  width: 20px;
+}
+
+/* OLX FORM STYLING */
+
+.nav-bg-blue {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  background-color: rgb(247, 248, 248);
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1280px;
+  margin: auto;
+}
+
+.olx-logo {
+  cursor: pointer;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 14px 0;
+  position: relative;
+}
+
+.olx-logo ._10c831ef {
+  fill: rgb(64, 119, 255);
+}
+
+._1a6eed8f:hover {
+  fill: rgb(64, 119, 255);
+}
+
+.nav-bar {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 14px 0;
+}
+
+#olx-nav {
+  height: 37px;
+  width: 64px;
+}
+
+.focus-items {
+  display: flex;
+  flex-direction: column;
+  width: 27.6rem;
+  justify-content: center;
+  background-color: white;
+
+  border: 2px solid white;
+  position: absolute;
+  bottom: -40rem;
+  left: -4;
+}
+
+.search-location {
+  position: relative;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 0px 7px;
+  gap: 17px;
+  align-items: center;
+  /* width: 281px; */
+  height: 48px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.focus-items ul {
+  color: #002f34;
+  padding: 0px 33px;
+  gap: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 5rem;
+  color: black;
+
+
+}
+.focus-items #region{
+  color: black;
+  font-size: 23px;
+  font-weight: 400;
+  background-color: white;
+}
+
+.focus-items ul:hover {
+  background-color: rgba(79, 235, 249, 0.899);
+  cursor: pointer;
+}
+
+.focus-items ul img {
+  width: 24px;
+  height: 24px;
+}
+
+#m-glass {
+  height: 19px;
+  width: 19px;
+}
+
+#drop-down {
+  width: 13px;
+  height: 13px;
+}
+
+#locations {
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+  border: none;
+  height: 48px;
+}
+
+.search-location:hover {
+  cursor: text;
+  border: 1px solid aquamarine;
+}
+
+::placeholder {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+#arrow-down {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 29px;
+  height: 48px;
+}
+
+.search-accessories {
+  display: flex;
+  border-radius: 5px;
+  align-items: center;
+  width: 52%;
+  height: 48px;
+  border: 2px solid black;
+}
+
+.search-accessories:hover {
+  cursor: text;
+  border: 1px solid aqua;
+}
+
+#div {
+  background-color: white;
+  height: 44px;
+  width: 1rem;
+}
+
+#search-two {
+  background-color: rgb(18, 47, 52);
+  height: 48px;
+  width: 48px;
+}
+
+#search-two img {
+  height: 22px;
+  width: 22px;
+}
+
+#assesories {
+  border: none;
+  outline: none;
+  height: 44px;
+  width: 100%;
+}
+
+#assesories ::placeholder {
+  margin-left: 10px;
+}
+
+.login-btn {
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-btn:hover {
+  #underline {
+    cursor: pointer;
+    display: none;
+  }
+}
+
+.login-btn a {
+  color: rgb(18, 47, 52);
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.login-btn a:hover {
+  text-decoration: none;
+}
+
+#underline {
+  cursor: pointer;
+  width: 41px;
+  border: 2px rgb(18, 47, 52);
+  height: 3px;
+  background-color: rgb(18, 47, 52);
+}
+
+#underline:hover {
+  text-decoration: none;
+
+  display: none;
+  background-color: none;
+}
+
+.sell {
+  display: flex;
+  cursor: pointer;
+  gap: 0.3rem;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  width: 103px;
+  background-image: url(sell\ background.svg);
+}
+
+.sell span {
+  font-size: 15px;
+  color: rgb(18, 47, 52);
+  font-weight: 700;
+}
+
+.all-accessories-container {
+  border: 2px solid white;
+  padding: 0.6rem;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.all-assessories {
+  max-width: 1280px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.all-categories {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.all-assessories a {
+  text-decoration: none;
+  color: rgb(18, 47, 52);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.main-content-section {
+  margin-top: 0.5rem;
+  border: 2px solid white;
+  margin-bottom: 2rem;
+  /* box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
+}
+
+.container {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+#hamdard {
+  width: 728px;
+  height: 90px;
+  margin: auto;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 11rem;
+  height: fit-content;
+  max-width: 100%;
+}
+
+.card-boxes {
+  max-width: 1280px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.caption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#view-more {
+  height: 0px;
+  background: transparent;
+  border: none;
+  color: #3a77ff;
+  font-weight: 700;
+  font-size: 1.596rem;
+}
+
+.card-box-cover {
+  display: flex;
+  gap: 2rem;
+}
+
+.card-box-items {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 335px;
+  width: 20%;
+  flex-grow: 1;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+#item-image {
+  width: 100%;
+  object-fit: cover;
+  height: 180px;
+}
+
+.card-box-items h4 {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.price {
+  margin: 1rem 2rem;
+  gap: 16rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.price-one {
+  margin: 1rem 2rem;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 14rem;
+}
+
+.price-two {
+  margin: 3px 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 17rem;
+}
+
+.price-three {
+  margin: 1rem 2rem;
+  gap: 14rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.price-four {
+  margin: 3px 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 9rem;
+}
+
+.price h4,
+.price-four,
+.price-one,
+.price-three,
+.price-two {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+h5,
+p {
+  margin-left: 2rem;
+}
+
+.card-box-items h5 {
+  font-size: 17px;
+  margin-top: -11px;
+}
+
+.h-5 {
+  font-size: 17px;
+  margin-top: -11px;
+}
+
+#h-5 {
+  margin-top: -12px;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+#h-5-2 {
+  margin-top: -3px;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+#h-5-3 {
+  margin-top: 0px;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+#heart {
+  cursor: pointer;
+  width: 20px;
+  height: 18px;
+  fill: black;
+}
+
+.para {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
+
+#para {
+  display: flex;
+  flex-direction: column;
+  margin-top: -2px;
+}
+
+.card-box-items p {
+  color: grey;
+  margin: 1px 2rem;
+}
+
+#km {
+  margin-top: -8px;
+  font-weight: 700;
+}
+
+.olx-about {
+  max-width: 100%;
+  background-color: rgb(247, 248, 248);
+}
+
+.about-card {
+  margin: auto;
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.about-card-left {
+  height: 200px;
+  width: 439.39px;
+}
+
+.about-card-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  gap: 2rem;
+  width: 395.61px;
+}
+
+.about-card-middle h1 {
+  font-size: 37px;
+  font-weight: 700;
+}
+
+.about-card-middle p {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.about-card-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+
+  height: 200px;
+  width: 439px;
+}
+
+.about-card-right-one {
+  border: 1px solid rgba(128, 128, 128, 0.594);
+
+  height: 14rem;
+}
+
+.about-card-right-two {
+  display: flex;
+
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.about-card-right-two img {
+  width: 128px;
+  height: 40px;
+}
+
+.img {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-cover {
+  max-width: 100%;
+  background-color: rgb(235, 238, 239);
+}
+
+.footer-content {
+  display: flex;
+  padding: 30px 0px;
+  justify-content: center;
+  margin: auto;
+}
+
+.footer-items {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  width: 253px;
+  height: 115px;
+}
+
+.footer-items h5 {
+  font-weight: 700;
+  text-align: left;
+}
+
+.footer-items li {
+  font-size: 1.204rem;
+  color: grey;
+  margin-left: 18px;
+  list-style: none;
+}
+
+.footer-items li:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.footer-items-advance {
+  display: flex;
+  flex-direction: column;
+
+  width: 253px;
+  height: 230px;
+}
+
+.footer-items-advance h5 {
+  font-weight: 700;
+  text-align: left;
+}
+
+.footer-logos img {
+  height: 24px;
+  width: 24px;
+}
+
+.footer-about-images {
+  margin-top: 2.7rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-about-images img {
+  width: 84px;
+  height: 28px;
+}
+
+#footer {
+  justify-content: flex-end;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  background-color: rgb(18, 47, 52);
+  color: white;
+  max-width: 100%;
+  padding: 3rem 0;
+  justify-content: center;
+}
+
+footer div {
+  font-size: 12px;
+  font-weight: 700;
+  color: white;
+}
+
+.sell-two {
+  margin: auto;
+  position: fixed;
+  bottom: 20px;
+  display: NONE;
+  left: 0;
+  right: 0;
+  cursor: pointer;
+  gap: 3px;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  width: 103px;
+  background-image: url(sell\ background.svg);
+}
+
+.sell-two span {
+  font-size: 15px;
+  color: rgb(18, 47, 52);
+  font-weight: 700;
+}
